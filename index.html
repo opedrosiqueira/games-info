@@ -1,0 +1,31 @@
+<form id="googlesearch" action="https://google.com/search" type="GET">
+
+  <label>
+     Search on Google: 
+     <input type="search" name="q">
+   </label>
+
+  <input type="submit" value="Go">
+
+</form>
+
+
+<ul>
+    <li><a href='csgo/cs_go_smokes.html'>CSGO Smokes</a></li>
+    <li><a href='https://google.com'>Google</a></li>
+</ul>
+<style>
+    body{background-color: aliceblue;}
+</style>
+
+
+<script>
+var form = document.getElementById("googlesearch");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  var search = form.querySelector("input[type=search]");
+  search.value =  search.value;
+  form.submit();
+});
+</script>
